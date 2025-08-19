@@ -60,9 +60,45 @@ o After finishing, click File > Exit to close Eclipse IDE.
 
 
 ## PROGRAM:
+```
+import java.util.Scanner;
+
+public class jaswant {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        
+        System.out.print("Enter the number of elements: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        
+       
+        System.out.println("Enter " + n + " numbers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        
+        
+        int largest = arr[0];
+        
+        
+        for (int i = 1; i < n; i++) {
+            if (arr[i] > largest) {
+                largest = arr[i];
+            }
+        }
+        
+        
+        System.out.println("The largest element is: " + largest);
+        
+        sc.close(); 
+    }
+}
+```
 
 
 ## OUTPUT:
+<img width="1917" height="993" alt="image" src="https://github.com/user-attachments/assets/eec40f15-8bac-4468-a6a4-d23386d8bcd6" />
 
 
 ## RESULT:
